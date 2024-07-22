@@ -1,0 +1,185 @@
+/* Общие стили для body и контейнеров */
+body {
+    font-family: 'Roboto', sans-serif; /* Изменили шрифт на Roboto */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Хедер и навигация */
+header {
+    position: relative;
+    height: 50vh; /* Уменьшена высота хедера */
+    overflow: hidden;
+}
+
+.slick-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-slide img {
+    max-width: 100%; /* Максимальная ширина изображения */
+    height: auto; /* Высота по пропорциям изображения */
+}
+
+/* Картинка по центру */
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    background-color: transparent; /* Убрали черную рамку */
+}
+
+.header-content img {
+    max-width: 80%; /* Размер логотипа можно изменить по желанию */
+    height: auto;
+    margin-bottom: 10px; /* Отступ между логотипом и текстом */
+}
+
+.header-content p {
+    font-family: 'Playfair Display', serif; /* Шрифт для текста */
+    font-size: 24px; /* Размер шрифта */
+    margin: 0; /* Убираем отступы */
+}
+
+/* Основные стили для навигации */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: #333;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+/* Разделы */
+section {
+    padding: 60px 0;
+}
+
+.home, .about, .gallery, .contact, .services, .reviews {
+    background-color: #fff; /* Убрали фон для всех секций */
+}
+
+/* О нас и Добро пожаловать в отдельных рамках */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px; /* Скругление углов */
+    background-color: #fff; /* Белый фон для рамок */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для рамок */
+}
+
+/* Стили для секции Услуги */
+.services ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.services ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.services ul li i {
+    margin-right: 10px;
+    color: #333;
+    font-size: 24px;
+}
+
+/* Галерея */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery-grid a {
+    flex: 1 1 calc(33.333% - 20px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+}
+
+/* Стили для секции Отзывы */
+.reviews .review {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reviews .review p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Контакты */
+.contact p {
+    margin: 10px 0;
+}
+
+/* Подвал */
+footer {
+    background-color: #333; /* Темный фон подвала */
+    color: #fff; /* Белый цвет текста */
+    padding: 20px 0;
+    text-align: center;
+    margin: 0; /* Убираем возможные отступы */
+    border: none; /* Убираем возможные бордюры */
+}
+
+/* Убедитесь, что контейнер внутри подвала не имеет лишнего фона */
+footer .container {
+    background: transparent; /* Сделать фон контейнера прозрачным */
+    box-shadow: none; /* Убираем возможные тени */
+}
+
+/* Стили для социальных сетей */
+.contact a {
+    color: #333; /* Цвет текста ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: color 0.3s ease; /* Плавный переход цвета */
+}
+
+.contact a:hover {
+    color: #575757; /* Цвет при наведении */
+}
+
+/* Стили для иконок социальных сетей */
+.contact i {
+    margin-right: 5px; /* Отступ справа от иконки */
+}
