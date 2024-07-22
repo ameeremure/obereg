@@ -192,4 +192,8 @@ footer .container {
     section {
         padding: 20px 0;
     }
+
+    .header-content img {
+        max-width: 100%;
+    }
 }
