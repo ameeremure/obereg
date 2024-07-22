@@ -183,3 +183,13 @@ footer .container {
 .contact i {
     margin-right: 5px; /* Отступ справа от иконки */
 }
+
+@media (max-width: 768px) {
+    header {
+        height: unset;
+    }
+
+    section {
+        padding: 20px 0;
+    }
+}
